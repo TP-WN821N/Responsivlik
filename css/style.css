@@ -13,7 +13,7 @@
   line-height: 60px;
   color: #fff;
 }
-.hero .header__list {
+.hero .hero__list {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -170,8 +170,26 @@
 }
 .mackbook .mackbook__box {
   display: flex;
+  align-items: center;
   flex-direction: column;
   gap: 100px;
+}
+.mackbook .mackbook__box .mackbook__btn {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  color: #fff;
+  background-color: #02897A;
+  padding: 11px 18px;
+  cursor: pointer;
+  border: 1.5px solid transparent;
+  border-radius: 5px;
+  width: 220px;
+  transition: 0.4s;
+}
+.mackbook .mackbook__box .mackbook__btn:hover {
+  background-color: transparent;
+  border-color: #fff;
 }
 
 .mackbook__item {
@@ -451,7 +469,19 @@ body {
     padding: 10px 0;
   }
   .header__list {
-    display: none;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100vh;
+    background-color: red;
+  }
+  .toggle_menu {
+    left: 0;
   }
   .medu {
     display: flex;
@@ -488,5 +518,13 @@ body {
   }
   .header__oction .btn {
     display: none;
+  }
+  .header__list {
+    width: 70%;
+  }
+}
+@media (max-width: 400px) {
+  .header__list {
+    width: 80%;
   }
 }/*# sourceMappingURL=style.css.map */

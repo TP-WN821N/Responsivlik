@@ -147,7 +147,19 @@ body {
     padding: 10px 0;
   }
   .header__list{ 
-    display: none;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100vh;
+    background-color: red;
+  }
+  .toggle_menu {
+    left: 0;
   }
   .medu {
     display: flex;
@@ -190,5 +202,12 @@ body {
       display: none;
     }
   }
-  
+  .header__list{ 
+    width: 70%;
+  }
+}
+@media (max-width: 400px) {
+  .header__list{ 
+    width: 80%;
+  }
 }
